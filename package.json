@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "start": "node dist/src/shared/infra/http/server.js",
-    "build": "rimraf dist/* && tsc -p tsconfig.json && tscpaths -p tsconfig.json -s . -o ./dist",
-    "dev:server": "ts-node-dev -r tsconfig-paths/register --transpile-only --trace-warnings --inspect --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "build": "rimraf dist/* && tsc -p tsconfig.json",
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --transpile-only --trace-warnings --inspect --ignore-watch node_modules src/shared/infra/http/server.ts"
   },
   "keywords": [],
   "author": "",
