@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+
+.env
+
+## In Production
+
+src/shared/providers/mailerprovider
