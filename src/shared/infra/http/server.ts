@@ -1,6 +1,6 @@
 import { config } from 'dotenv-flow';
 
-import api from '@config/api';
+import api from '../../../../src/config/api';
 import { app } from '@shared/infra/http/app';
 
 config({ silent: true });

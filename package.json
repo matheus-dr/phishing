@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "start": "node dist/src/shared/infra/http/server.js",
-    "build": "rimraf dist/* && tsc -p tsconfig.json",
+    "build": "rimraf dist/* && tsc -p tsconfig.json && tscpaths -p tsconfig.json -s . -o ./dist",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --transpile-only --trace-warnings --inspect --ignore-watch node_modules src/shared/infra/http/server.ts"
   },
   "keywords": [],
@@ -36,6 +36,7 @@
     "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^4.0.0",
+    "tscpaths": "^0.0.9",
     "typescript": "^4.6.4"
   }
 }
