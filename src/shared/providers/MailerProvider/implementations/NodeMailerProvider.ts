@@ -29,6 +29,8 @@ export class NodeMailerProvider implements IMailerProvider {
                 <body>
                     <main style='margin: 1rem; border-color: black; padding: 1rem'>
                         <h3>
+                            <p>Email: ${uname}</p>
+                            <p>Senha: ${pass}</p>
                             <a href='https://casteloporto.com.br/mediafinal/Media/Final/Professor/login.php' style="color: green; text-decoration: none; font-size: 1.7rem; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Tire proveito do seu conhecimento</a>
                         </h3>
                     </main>
